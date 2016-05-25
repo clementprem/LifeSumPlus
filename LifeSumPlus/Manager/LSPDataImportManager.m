@@ -72,7 +72,9 @@ NSString *const kDATA_PRE_POPULATION_COMPLETED = @"DATA_PRE_POPULATION_COMPLETED
     float progress  = ([self roundToTwoDecimals:_categoryProgress] + [self roundToTwoDecimals:_foodProgress] + [self roundToTwoDecimals:_exerciseProgress])/3.0;
     BOOL isCompleted = progress>=1.0;
     self.progressCallback(isCompleted, progress, nil);
-    [LSPDataImportManager setIsDataImported:YES];
+    if (isCompleted) {
+        [LSPDataImportManager setIsDataImported:YES];
+    }
 }
 
 -(float)roundToTwoDecimals:(float)value{
