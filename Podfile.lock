@@ -1,0 +1,25 @@
+PODS:
+  - ASProgressPopUpView (0.8)
+  - Groot (1.2):
+    - Groot/Swift (= 1.2)
+  - Groot/Swift (1.2)
+  - MDMCoreData/MDMCoreDataCore (1.5.1)
+  - MDMCoreData/MDMFetchedResultsCollectionDataSource (1.5.1):
+    - MDMCoreData/MDMCoreDataCore
+  - MDMCoreData/MDMFetchedResultsTableDataSource (1.5.1):
+    - MDMCoreData/MDMCoreDataCore
+
+DEPENDENCIES:
+  - ASProgressPopUpView (~> 0.8)
+  - Groot (~> 1.2)
+  - MDMCoreData/MDMFetchedResultsCollectionDataSource
+  - MDMCoreData/MDMFetchedResultsTableDataSource
+
+SPEC CHECKSUMS:
+  ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
+  Groot: 86c2c820d619f18586b2d1dcfd90e908339f00bc
+  MDMCoreData: 28b334173177effeb1dd135da677062096e3cb68
+
+PODFILE CHECKSUM: 6cb79d9428fb62c1a01b442ac25440f7ce8866f1
+
+COCOAPODS: 1.0.0.beta.8

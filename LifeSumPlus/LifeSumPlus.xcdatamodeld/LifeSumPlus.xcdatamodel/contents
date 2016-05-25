@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Category" representedClassName="FoodCategory" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="category"/>
+            </userInfo>
+        </attribute>
+        <attribute name="headCategoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="headcategoryid"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastUpdated" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="lastupdated"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameDA" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_da"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameDE" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_de"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameES" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_es"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameFI" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_fi"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameFR" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_fr"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameIT" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_it"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameNL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_nl"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameNo" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_no"/>
+            </userInfo>
+        </attribute>
+        <attribute name="namePL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_pl"/>
+            </userInfo>
+        </attribute>
+        <attribute name="namePT" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_pt"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameRU" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_ru"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameSV" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_sv"/>
+            </userInfo>
+        </attribute>
+        <attribute name="oID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="oid"/>
+            </userInfo>
+        </attribute>
+        <attribute name="photoVersion" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="photo_version"/>
+            </userInfo>
+        </attribute>
+        <attribute name="servingsCategory" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="servingscategory"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES">
+        <attribute name="addedbyuser" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="addedbyuser"/>
+            </userInfo>
+        </attribute>
+        <attribute name="calories" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="calories"/>
+            </userInfo>
+        </attribute>
+        <attribute name="custom" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="custom"/>
+            </userInfo>
+        </attribute>
+        <attribute name="deleted" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="deleted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="downloaded" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="downloaded"/>
+            </userInfo>
+        </attribute>
+        <attribute name="hidden" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="hidden"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastUpdated" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="lastupdated"/>
+            </userInfo>
+        </attribute>
+        <attribute name="oID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="oid"/>
+            </userInfo>
+        </attribute>
+        <attribute name="photoVersion" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="photo_version"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="title"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="JSONKeyPath" value="custom"/>
+        </userInfo>
+    </entity>
+    <entity name="Food" representedClassName="Food" syncable="YES">
+        <attribute name="addedByUser" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="addedbyuser"/>
+            </userInfo>
+        </attribute>
+        <attribute name="brand" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="brand"/>
+            </userInfo>
+        </attribute>
+        <attribute name="calories" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="calories"/>
+            </userInfo>
+        </attribute>
+        <attribute name="carbohydrates" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="carbohydrates"/>
+            </userInfo>
+        </attribute>
+        <attribute name="categoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="categoryid"/>
+            </userInfo>
+        </attribute>
+        <attribute name="cholesterol" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="cholesterol"/>
+            </userInfo>
+        </attribute>
+        <attribute name="custom" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="custom"/>
+            </userInfo>
+        </attribute>
+        <attribute name="defaultSize" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="defaultsize"/>
+            </userInfo>
+        </attribute>
+        <attribute name="deleted" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="deleted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="downloaded" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="downloaded"/>
+            </userInfo>
+        </attribute>
+        <attribute name="fat" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="fat"/>
+            </userInfo>
+        </attribute>
+        <attribute name="fiber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="fiber"/>
+            </userInfo>
+        </attribute>
+        <attribute name="gramsPerServing" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="gramsperserving"/>
+            </userInfo>
+        </attribute>
+        <attribute name="hidden" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="hidden"/>
+            </userInfo>
+        </attribute>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="language"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastUpdated" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="lastupdated"/>
+            </userInfo>
+        </attribute>
+        <attribute name="mlInGram" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="mlingram"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameDA" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_da"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameDE" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_de"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameES" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_es"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameFI" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_fi"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameFR" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_fr"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameIT" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_it"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameNL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_nl"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameNo" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_no"/>
+            </userInfo>
+        </attribute>
+        <attribute name="namePL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_pl"/>
+            </userInfo>
+        </attribute>
+        <attribute name="namePT" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_pt"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameRU" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_ru"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameSV" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="name_sv"/>
+            </userInfo>
+        </attribute>
+        <attribute name="oCategoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="ocategoryid"/>
+            </userInfo>
+        </attribute>
+        <attribute name="oID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="oid"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pcInGram" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="pcsingram"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pcsText" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="pcstext"/>
+            </userInfo>
+        </attribute>
+        <attribute name="potassium" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="potassium"/>
+            </userInfo>
+        </attribute>
+        <attribute name="protein" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="protein"/>
+            </userInfo>
+        </attribute>
+        <attribute name="saturatedFat" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="saturatedfat"/>
+            </userInfo>
+        </attribute>
+        <attribute name="servingCategory" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="servingcategory"/>
+            </userInfo>
+        </attribute>
+        <attribute name="showMeasurement" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="showmeasurement"/>
+            </userInfo>
+        </attribute>
+        <attribute name="showonlySameType" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="showonlysametype"/>
+            </userInfo>
+        </attribute>
+        <attribute name="sodium" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="sodium"/>
+            </userInfo>
+        </attribute>
+        <attribute name="sourceID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="source_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="sugar" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="sugar"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="title"/>
+            </userInfo>
+        </attribute>
+        <attribute name="typeOfMeasurement" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="typeofmeasurement"/>
+            </userInfo>
+        </attribute>
+        <attribute name="unsaturatedFat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="unsaturatedfat"/>
+            </userInfo>
+        </attribute>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Food"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-29" positionY="-486" width="128" height="315"/>
+        <element name="Exercise" positionX="-218" positionY="-153" width="128" height="193"/>
+        <element name="Food" positionX="-423" positionY="-216" width="128" height="749"/>
+    </elements>
+</model>

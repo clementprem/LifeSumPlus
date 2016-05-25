@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EE2894063BDF4825C05A888 /* Pods_LifeSumPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA9F8555EA310777000D91 /* Pods_LifeSumPlus.framework */; };
+		8830F195D739010344D79160 /* Pods_LifeSumPlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC58FF9155D4AF6C76175A35 /* Pods_LifeSumPlusTests.framework */; };
+		8B61763CD03F91BE2161141D /* Pods_LifeSumPlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D222519BCD3874AD6CAABC43 /* Pods_LifeSumPlusUITests.framework */; };
+		EB2C72251CF4B86900A82D76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2C72241CF4B86900A82D76 /* main.m */; };
+		EB2C72281CF4B86900A82D76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2C72271CF4B86900A82D76 /* AppDelegate.m */; };
+		EB2C722E1CF4B86900A82D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2C722C1CF4B86900A82D76 /* Main.storyboard */; };
+		EB2C72311CF4B86900A82D76 /* LifeSumPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB2C722F1CF4B86900A82D76 /* LifeSumPlus.xcdatamodeld */; };
+		EB2C72331CF4B86900A82D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2C72321CF4B86900A82D76 /* Assets.xcassets */; };
+		EB2C72361CF4B86900A82D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2C72341CF4B86900A82D76 /* LaunchScreen.storyboard */; };
+		EB2C72411CF4B86900A82D76 /* LifeSumPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2C72401CF4B86900A82D76 /* LifeSumPlusTests.m */; };
+		EB2C724C1CF4B86900A82D76 /* LifeSumPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2C724B1CF4B86900A82D76 /* LifeSumPlusUITests.m */; };
+		EB2C72621CF4C0E900A82D76 /* categoriesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2C725F1CF4C0E900A82D76 /* categoriesStatic.json */; };
+		EB2C72631CF4C0E900A82D76 /* exercisesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2C72601CF4C0E900A82D76 /* exercisesStatic.json */; };
+		EB2C72641CF4C0E900A82D76 /* foodStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2C72611CF4C0E900A82D76 /* foodStatic.json */; };
+		EB2C72771CF4CD6600A82D76 /* Food+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2C726A1CF4CD6600A82D76 /* Food+CoreDataProperties.m */; };
+		EB2C72781CF4CD6600A82D76 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2C726C1CF4CD6600A82D76 /* Food.m */; };
+		EB2C72791CF4CD6600A82D76 /* Exercise+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2C726E1CF4CD6600A82D76 /* Exercise+CoreDataProperties.m */; };
+		EB2C727A1CF4CD6600A82D76 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2C72701CF4CD6600A82D76 /* Exercise.m */; };
+		EB6F61931CF549C2008F577A /* LSPFoodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F61911CF549C2008F577A /* LSPFoodsListViewController.m */; };
+		EB6F61941CF549C2008F577A /* ProgressOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F61921CF549C2008F577A /* ProgressOverlayViewController.swift */; };
+		EB6F61971CF549CD008F577A /* FoodTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F61961CF549CD008F577A /* FoodTableCell.swift */; };
+		EB6F619B1CF54ADE008F577A /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F619A1CF54ADE008F577A /* ExerciseViewController.swift */; };
+		EB6F619F1CF57CB6008F577A /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F619E1CF57CB6008F577A /* ExerciseTableViewCell.swift */; };
+		EB6F61A11CF58445008F577A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F61A01CF58445008F577A /* CategoryViewController.swift */; };
+		EB6F61A91CF58680008F577A /* FoodCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F61A61CF58680008F577A /* FoodCategory+CoreDataProperties.m */; };
+		EB6F61AA1CF58680008F577A /* FoodCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F61A81CF58680008F577A /* FoodCategory.m */; };
+		EB6F61B01CF5971E008F577A /* NutritionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6F61AF1CF5971E008F577A /* NutritionCell.xib */; };
+		EB6F61B21CF59BA5008F577A /* NutritionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F61B11CF59BA5008F577A /* NutritionCell.swift */; };
+		EB6F61B41CF59E62008F577A /* LSPNutritionDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F61B31CF59E62008F577A /* LSPNutritionDataBuilder.swift */; };
+		EB9562CA1CF5AF25009AD6A5 /* FoodNutritionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9562C81CF5AF25009AD6A5 /* FoodNutritionViewController.xib */; };
+		EB9562CC1CF5C2A5009AD6A5 /* FoodNutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9562CB1CF5C2A5009AD6A5 /* FoodNutritionViewController.swift */; };
+		EBD1F6E01CF503C700317C50 /* LSPDataImportManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD1F6DF1CF503C700317C50 /* LSPDataImportManager.m */; };
+		EBD1F6E31CF5045000317C50 /* LSPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD1F6E21CF5045000317C50 /* LSPCoreDataManager.m */; };
+		EBD1F6E71CF506DC00317C50 /* LSPCoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD1F6E61CF506DC00317C50 /* LSPCoreDataOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB2C723D1CF4B86900A82D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2C72181CF4B86900A82D76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB2C721F1CF4B86900A82D76;
+			remoteInfo = LifeSumPlus;
+		};
+		EB2C72481CF4B86900A82D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2C72181CF4B86900A82D76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB2C721F1CF4B86900A82D76;
+			remoteInfo = LifeSumPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		409CEB4B200EE7292C40BD47 /* Pods-LifeSumPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSumPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSumPlusTests/Pods-LifeSumPlusTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D744A8F4C75E952329EB6FA /* Pods-LifeSumPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSumPlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSumPlusTests/Pods-LifeSumPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96E7E2DC8E6F17D4D547B2AA /* Pods-LifeSumPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSumPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSumPlus/Pods-LifeSumPlus.release.xcconfig"; sourceTree = "<group>"; };
+		9B8CBCFFE2E23D1DD0C83418 /* Pods-LifeSumPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSumPlusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSumPlusUITests/Pods-LifeSumPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF70F9F9845B5795390FC0F0 /* Pods-LifeSumPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSumPlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSumPlusUITests/Pods-LifeSumPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4EA9F8555EA310777000D91 /* Pods_LifeSumPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeSumPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC58FF9155D4AF6C76175A35 /* Pods_LifeSumPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeSumPlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D222519BCD3874AD6CAABC43 /* Pods_LifeSumPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeSumPlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E591BC4A3698AA179F2BE92E /* Pods-LifeSumPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSumPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSumPlus/Pods-LifeSumPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2C72201CF4B86900A82D76 /* LifeSumPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeSumPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2C72241CF4B86900A82D76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EB2C72261CF4B86900A82D76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EB2C72271CF4B86900A82D76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EB2C722D1CF4B86900A82D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB2C72301CF4B86900A82D76 /* LifeSumPlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifeSumPlus.xcdatamodel; sourceTree = "<group>"; };
+		EB2C72321CF4B86900A82D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB2C72351CF4B86900A82D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB2C72371CF4B86900A82D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2C723C1CF4B86900A82D76 /* LifeSumPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeSumPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2C72401CF4B86900A82D76 /* LifeSumPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LifeSumPlusTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EB2C72421CF4B86900A82D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2C72471CF4B86900A82D76 /* LifeSumPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeSumPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2C724B1CF4B86900A82D76 /* LifeSumPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LifeSumPlusUITests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EB2C724D1CF4B86900A82D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2C725F1CF4C0E900A82D76 /* categoriesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categoriesStatic.json; sourceTree = "<group>"; };
+		EB2C72601CF4C0E900A82D76 /* exercisesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercisesStatic.json; sourceTree = "<group>"; };
+		EB2C72611CF4C0E900A82D76 /* foodStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodStatic.json; sourceTree = "<group>"; };
+		EB2C72691CF4CD6600A82D76 /* Food+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Food+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EB2C726A1CF4CD6600A82D76 /* Food+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Food+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EB2C726B1CF4CD6600A82D76 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Food.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EB2C726C1CF4CD6600A82D76 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Food.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EB2C726D1CF4CD6600A82D76 /* Exercise+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Exercise+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EB2C726E1CF4CD6600A82D76 /* Exercise+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Exercise+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EB2C726F1CF4CD6600A82D76 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Exercise.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EB2C72701CF4CD6600A82D76 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Exercise.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EB5F2D9B1CF50BED00AB190C /* LifeSumPlus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeSumPlus-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB6F61901CF549C2008F577A /* LSPFoodsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPFoodsListViewController.h; sourceTree = "<group>"; };
+		EB6F61911CF549C2008F577A /* LSPFoodsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPFoodsListViewController.m; sourceTree = "<group>"; };
+		EB6F61921CF549C2008F577A /* ProgressOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressOverlayViewController.swift; sourceTree = "<group>"; };
+		EB6F61961CF549CD008F577A /* FoodTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableCell.swift; sourceTree = "<group>"; };
+		EB6F619A1CF54ADE008F577A /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		EB6F619E1CF57CB6008F577A /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		EB6F61A01CF58445008F577A /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		EB6F61A51CF58680008F577A /* FoodCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoodCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EB6F61A61CF58680008F577A /* FoodCategory+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FoodCategory+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EB6F61A71CF58680008F577A /* FoodCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCategory.h; sourceTree = "<group>"; };
+		EB6F61A81CF58680008F577A /* FoodCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCategory.m; sourceTree = "<group>"; };
+		EB6F61AF1CF5971E008F577A /* NutritionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NutritionCell.xib; sourceTree = "<group>"; };
+		EB6F61B11CF59BA5008F577A /* NutritionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionCell.swift; sourceTree = "<group>"; };
+		EB6F61B31CF59E62008F577A /* LSPNutritionDataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPNutritionDataBuilder.swift; sourceTree = "<group>"; };
+		EB9562C81CF5AF25009AD6A5 /* FoodNutritionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodNutritionViewController.xib; sourceTree = "<group>"; };
+		EB9562CB1CF5C2A5009AD6A5 /* FoodNutritionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNutritionViewController.swift; sourceTree = "<group>"; };
+		EBD1F6DE1CF503C700317C50 /* LSPDataImportManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPDataImportManager.h; sourceTree = "<group>"; };
+		EBD1F6DF1CF503C700317C50 /* LSPDataImportManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPDataImportManager.m; sourceTree = "<group>"; };
+		EBD1F6E11CF5045000317C50 /* LSPCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPCoreDataManager.h; sourceTree = "<group>"; };
+		EBD1F6E21CF5045000317C50 /* LSPCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPCoreDataManager.m; sourceTree = "<group>"; };
+		EBD1F6E51CF506DC00317C50 /* LSPCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPCoreDataOperation.h; sourceTree = "<group>"; };
+		EBD1F6E61CF506DC00317C50 /* LSPCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPCoreDataOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB2C721D1CF4B86900A82D76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE2894063BDF4825C05A888 /* Pods_LifeSumPlus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2C72391CF4B86900A82D76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8830F195D739010344D79160 /* Pods_LifeSumPlusTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2C72441CF4B86900A82D76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B61763CD03F91BE2161141D /* Pods_LifeSumPlusUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5578248922FB90489B8486AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4EA9F8555EA310777000D91 /* Pods_LifeSumPlus.framework */,
+				BC58FF9155D4AF6C76175A35 /* Pods_LifeSumPlusTests.framework */,
+				D222519BCD3874AD6CAABC43 /* Pods_LifeSumPlusUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86FA0DA23B4EBEFBDCDD6FFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E591BC4A3698AA179F2BE92E /* Pods-LifeSumPlus.debug.xcconfig */,
+				96E7E2DC8E6F17D4D547B2AA /* Pods-LifeSumPlus.release.xcconfig */,
+				6D744A8F4C75E952329EB6FA /* Pods-LifeSumPlusTests.debug.xcconfig */,
+				409CEB4B200EE7292C40BD47 /* Pods-LifeSumPlusTests.release.xcconfig */,
+				AF70F9F9845B5795390FC0F0 /* Pods-LifeSumPlusUITests.debug.xcconfig */,
+				9B8CBCFFE2E23D1DD0C83418 /* Pods-LifeSumPlusUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB2C72171CF4B86900A82D76 = {
+			isa = PBXGroup;
+			children = (
+				EB2C72221CF4B86900A82D76 /* LifeSumPlus */,
+				EB2C723F1CF4B86900A82D76 /* LifeSumPlusTests */,
+				EB2C724A1CF4B86900A82D76 /* LifeSumPlusUITests */,
+				EB2C72211CF4B86900A82D76 /* Products */,
+				86FA0DA23B4EBEFBDCDD6FFE /* Pods */,
+				5578248922FB90489B8486AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB2C72211CF4B86900A82D76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C72201CF4B86900A82D76 /* LifeSumPlus.app */,
+				EB2C723C1CF4B86900A82D76 /* LifeSumPlusTests.xctest */,
+				EB2C72471CF4B86900A82D76 /* LifeSumPlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB2C72221CF4B86900A82D76 /* LifeSumPlus */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F61951CF549CD008F577A /* Views */,
+				EBD1F6E41CF506BF00317C50 /* Operation */,
+				EBD1F6DD1CF503C700317C50 /* Manager */,
+				EB2C72591CF4B8E500A82D76 /* Controllers */,
+				EB2C725A1CF4B8E500A82D76 /* Data */,
+				EB2C725B1CF4B8E500A82D76 /* Helpers */,
+				EB2C725C1CF4B8E500A82D76 /* Models */,
+				EB2C725D1CF4B8E500A82D76 /* Services */,
+				EB2C725E1CF4B8E500A82D76 /* Utils */,
+				EB2C72261CF4B86900A82D76 /* AppDelegate.h */,
+				EB2C72271CF4B86900A82D76 /* AppDelegate.m */,
+				EB2C722C1CF4B86900A82D76 /* Main.storyboard */,
+				EB2C72321CF4B86900A82D76 /* Assets.xcassets */,
+				EB2C72341CF4B86900A82D76 /* LaunchScreen.storyboard */,
+				EB2C72371CF4B86900A82D76 /* Info.plist */,
+				EB2C722F1CF4B86900A82D76 /* LifeSumPlus.xcdatamodeld */,
+				EB2C72231CF4B86900A82D76 /* Supporting Files */,
+				EB5F2D9B1CF50BED00AB190C /* LifeSumPlus-Bridging-Header.h */,
+			);
+			path = LifeSumPlus;
+			sourceTree = "<group>";
+		};
+		EB2C72231CF4B86900A82D76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C72241CF4B86900A82D76 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB2C723F1CF4B86900A82D76 /* LifeSumPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C72401CF4B86900A82D76 /* LifeSumPlusTests.m */,
+				EB2C72421CF4B86900A82D76 /* Info.plist */,
+			);
+			path = LifeSumPlusTests;
+			sourceTree = "<group>";
+		};
+		EB2C724A1CF4B86900A82D76 /* LifeSumPlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C724B1CF4B86900A82D76 /* LifeSumPlusUITests.m */,
+				EB2C724D1CF4B86900A82D76 /* Info.plist */,
+			);
+			path = LifeSumPlusUITests;
+			sourceTree = "<group>";
+		};
+		EB2C72591CF4B8E500A82D76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB9562CB1CF5C2A5009AD6A5 /* FoodNutritionViewController.swift */,
+				EB6F61901CF549C2008F577A /* LSPFoodsListViewController.h */,
+				EB6F61911CF549C2008F577A /* LSPFoodsListViewController.m */,
+				EB6F61921CF549C2008F577A /* ProgressOverlayViewController.swift */,
+				EB6F619A1CF54ADE008F577A /* ExerciseViewController.swift */,
+				EB6F61A01CF58445008F577A /* CategoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EB2C725A1CF4B8E500A82D76 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C725F1CF4C0E900A82D76 /* categoriesStatic.json */,
+				EB2C72601CF4C0E900A82D76 /* exercisesStatic.json */,
+				EB2C72611CF4C0E900A82D76 /* foodStatic.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EB2C725B1CF4B8E500A82D76 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F61B31CF59E62008F577A /* LSPNutritionDataBuilder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EB2C725C1CF4B8E500A82D76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F61A51CF58680008F577A /* FoodCategory+CoreDataProperties.h */,
+				EB6F61A61CF58680008F577A /* FoodCategory+CoreDataProperties.m */,
+				EB6F61A71CF58680008F577A /* FoodCategory.h */,
+				EB6F61A81CF58680008F577A /* FoodCategory.m */,
+				EB2C72691CF4CD6600A82D76 /* Food+CoreDataProperties.h */,
+				EB2C726A1CF4CD6600A82D76 /* Food+CoreDataProperties.m */,
+				EB2C726B1CF4CD6600A82D76 /* Food.h */,
+				EB2C726C1CF4CD6600A82D76 /* Food.m */,
+				EB2C726D1CF4CD6600A82D76 /* Exercise+CoreDataProperties.h */,
+				EB2C726E1CF4CD6600A82D76 /* Exercise+CoreDataProperties.m */,
+				EB2C726F1CF4CD6600A82D76 /* Exercise.h */,
+				EB2C72701CF4CD6600A82D76 /* Exercise.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB2C725D1CF4B8E500A82D76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EB2C725E1CF4B8E500A82D76 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EB6F61951CF549CD008F577A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F61961CF549CD008F577A /* FoodTableCell.swift */,
+				EB6F619E1CF57CB6008F577A /* ExerciseTableViewCell.swift */,
+				EB6F61AF1CF5971E008F577A /* NutritionCell.xib */,
+				EB6F61B11CF59BA5008F577A /* NutritionCell.swift */,
+				EB9562C81CF5AF25009AD6A5 /* FoodNutritionViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EBD1F6DD1CF503C700317C50 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EBD1F6DE1CF503C700317C50 /* LSPDataImportManager.h */,
+				EBD1F6DF1CF503C700317C50 /* LSPDataImportManager.m */,
+				EBD1F6E11CF5045000317C50 /* LSPCoreDataManager.h */,
+				EBD1F6E21CF5045000317C50 /* LSPCoreDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EBD1F6E41CF506BF00317C50 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				EBD1F6E51CF506DC00317C50 /* LSPCoreDataOperation.h */,
+				EBD1F6E61CF506DC00317C50 /* LSPCoreDataOperation.m */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB2C721F1CF4B86900A82D76 /* LifeSumPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2C72501CF4B86900A82D76 /* Build configuration list for PBXNativeTarget "LifeSumPlus" */;
+			buildPhases = (
+				72542D6B88138DCBB0B698F4 /* 📦 Check Pods Manifest.lock */,
+				EB2C721C1CF4B86900A82D76 /* Sources */,
+				EB2C721D1CF4B86900A82D76 /* Frameworks */,
+				EB2C721E1CF4B86900A82D76 /* Resources */,
+				D848253DED94344E16C39B57 /* 📦 Embed Pods Frameworks */,
+				04A3172D0EDB3A6572CC6709 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeSumPlus;
+			productName = LifeSumPlus;
+			productReference = EB2C72201CF4B86900A82D76 /* LifeSumPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB2C723B1CF4B86900A82D76 /* LifeSumPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2C72531CF4B86900A82D76 /* Build configuration list for PBXNativeTarget "LifeSumPlusTests" */;
+			buildPhases = (
+				A26D518756D8C169889F7F6C /* 📦 Check Pods Manifest.lock */,
+				EB2C72381CF4B86900A82D76 /* Sources */,
+				EB2C72391CF4B86900A82D76 /* Frameworks */,
+				EB2C723A1CF4B86900A82D76 /* Resources */,
+				2C4D84D039D97B814F115272 /* 📦 Embed Pods Frameworks */,
+				6744A14BB24542A9248493EC /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB2C723E1CF4B86900A82D76 /* PBXTargetDependency */,
+			);
+			name = LifeSumPlusTests;
+			productName = LifeSumPlusTests;
+			productReference = EB2C723C1CF4B86900A82D76 /* LifeSumPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB2C72461CF4B86900A82D76 /* LifeSumPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2C72561CF4B86900A82D76 /* Build configuration list for PBXNativeTarget "LifeSumPlusUITests" */;
+			buildPhases = (
+				F4FEEB7620E7509071E2AF0E /* 📦 Check Pods Manifest.lock */,
+				EB2C72431CF4B86900A82D76 /* Sources */,
+				EB2C72441CF4B86900A82D76 /* Frameworks */,
+				EB2C72451CF4B86900A82D76 /* Resources */,
+				174D96A956D637D39D2E81D5 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB2C72491CF4B86900A82D76 /* PBXTargetDependency */,
+			);
+			name = LifeSumPlusUITests;
+			productName = LifeSumPlusUITests;
+			productReference = EB2C72471CF4B86900A82D76 /* LifeSumPlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB2C72181CF4B86900A82D76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Clement;
+				TargetAttributes = {
+					EB2C721F1CF4B86900A82D76 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QEX8J3RZZD;
+					};
+					EB2C723B1CF4B86900A82D76 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EB2C721F1CF4B86900A82D76;
+					};
+					EB2C72461CF4B86900A82D76 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EB2C721F1CF4B86900A82D76;
+					};
+				};
+			};
+			buildConfigurationList = EB2C721B1CF4B86900A82D76 /* Build configuration list for PBXProject "LifeSumPlus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB2C72171CF4B86900A82D76;
+			productRefGroup = EB2C72211CF4B86900A82D76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB2C721F1CF4B86900A82D76 /* LifeSumPlus */,
+				EB2C723B1CF4B86900A82D76 /* LifeSumPlusTests */,
+				EB2C72461CF4B86900A82D76 /* LifeSumPlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB2C721E1CF4B86900A82D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2C72361CF4B86900A82D76 /* LaunchScreen.storyboard in Resources */,
+				EB2C72331CF4B86900A82D76 /* Assets.xcassets in Resources */,
+				EB2C722E1CF4B86900A82D76 /* Main.storyboard in Resources */,
+				EB9562CA1CF5AF25009AD6A5 /* FoodNutritionViewController.xib in Resources */,
+				EB2C72631CF4C0E900A82D76 /* exercisesStatic.json in Resources */,
+				EB2C72621CF4C0E900A82D76 /* categoriesStatic.json in Resources */,
+				EB6F61B01CF5971E008F577A /* NutritionCell.xib in Resources */,
+				EB2C72641CF4C0E900A82D76 /* foodStatic.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2C723A1CF4B86900A82D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2C72451CF4B86900A82D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04A3172D0EDB3A6572CC6709 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSumPlus/Pods-LifeSumPlus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		174D96A956D637D39D2E81D5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSumPlusUITests/Pods-LifeSumPlusUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C4D84D039D97B814F115272 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSumPlusTests/Pods-LifeSumPlusTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6744A14BB24542A9248493EC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSumPlusTests/Pods-LifeSumPlusTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72542D6B88138DCBB0B698F4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A26D518756D8C169889F7F6C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D848253DED94344E16C39B57 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSumPlus/Pods-LifeSumPlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FEEB7620E7509071E2AF0E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB2C721C1CF4B86900A82D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6F619B1CF54ADE008F577A /* ExerciseViewController.swift in Sources */,
+				EB6F619F1CF57CB6008F577A /* ExerciseTableViewCell.swift in Sources */,
+				EB6F61A11CF58445008F577A /* CategoryViewController.swift in Sources */,
+				EB2C727A1CF4CD6600A82D76 /* Exercise.m in Sources */,
+				EBD1F6E71CF506DC00317C50 /* LSPCoreDataOperation.m in Sources */,
+				EB6F61AA1CF58680008F577A /* FoodCategory.m in Sources */,
+				EB2C72781CF4CD6600A82D76 /* Food.m in Sources */,
+				EB2C72311CF4B86900A82D76 /* LifeSumPlus.xcdatamodeld in Sources */,
+				EB6F61B41CF59E62008F577A /* LSPNutritionDataBuilder.swift in Sources */,
+				EB6F61971CF549CD008F577A /* FoodTableCell.swift in Sources */,
+				EB2C72281CF4B86900A82D76 /* AppDelegate.m in Sources */,
+				EB6F61B21CF59BA5008F577A /* NutritionCell.swift in Sources */,
+				EB2C72251CF4B86900A82D76 /* main.m in Sources */,
+				EB6F61931CF549C2008F577A /* LSPFoodsListViewController.m in Sources */,
+				EB2C72771CF4CD6600A82D76 /* Food+CoreDataProperties.m in Sources */,
+				EBD1F6E31CF5045000317C50 /* LSPCoreDataManager.m in Sources */,
+				EB6F61941CF549C2008F577A /* ProgressOverlayViewController.swift in Sources */,
+				EB9562CC1CF5C2A5009AD6A5 /* FoodNutritionViewController.swift in Sources */,
+				EBD1F6E01CF503C700317C50 /* LSPDataImportManager.m in Sources */,
+				EB2C72791CF4CD6600A82D76 /* Exercise+CoreDataProperties.m in Sources */,
+				EB6F61A91CF58680008F577A /* FoodCategory+CoreDataProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2C72381CF4B86900A82D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2C72411CF4B86900A82D76 /* LifeSumPlusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2C72431CF4B86900A82D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2C724C1CF4B86900A82D76 /* LifeSumPlusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB2C723E1CF4B86900A82D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB2C721F1CF4B86900A82D76 /* LifeSumPlus */;
+			targetProxy = EB2C723D1CF4B86900A82D76 /* PBXContainerItemProxy */;
+		};
+		EB2C72491CF4B86900A82D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB2C721F1CF4B86900A82D76 /* LifeSumPlus */;
+			targetProxy = EB2C72481CF4B86900A82D76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB2C722C1CF4B86900A82D76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB2C722D1CF4B86900A82D76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB2C72341CF4B86900A82D76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB2C72351CF4B86900A82D76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB2C724E1CF4B86900A82D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB2C724F1CF4B86900A82D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB2C72511CF4B86900A82D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E591BC4A3698AA179F2BE92E /* Pods-LifeSumPlus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LifeSumPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leapset.Order-Pad.enterprise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeSumPlus/LifeSumPlus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB2C72521CF4B86900A82D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E7E2DC8E6F17D4D547B2AA /* Pods-LifeSumPlus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LifeSumPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leapset.Order-Pad.enterprise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeSumPlus/LifeSumPlus-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		EB2C72541CF4B86900A82D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D744A8F4C75E952329EB6FA /* Pods-LifeSumPlusTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeSumPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clement.LifeSumPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeSumPlus.app/LifeSumPlus";
+			};
+			name = Debug;
+		};
+		EB2C72551CF4B86900A82D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409CEB4B200EE7292C40BD47 /* Pods-LifeSumPlusTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeSumPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clement.LifeSumPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeSumPlus.app/LifeSumPlus";
+			};
+			name = Release;
+		};
+		EB2C72571CF4B86900A82D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF70F9F9845B5795390FC0F0 /* Pods-LifeSumPlusUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = LifeSumPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clement.LifeSumPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LifeSumPlus;
+			};
+			name = Debug;
+		};
+		EB2C72581CF4B86900A82D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8CBCFFE2E23D1DD0C83418 /* Pods-LifeSumPlusUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = LifeSumPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clement.LifeSumPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LifeSumPlus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB2C721B1CF4B86900A82D76 /* Build configuration list for PBXProject "LifeSumPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2C724E1CF4B86900A82D76 /* Debug */,
+				EB2C724F1CF4B86900A82D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2C72501CF4B86900A82D76 /* Build configuration list for PBXNativeTarget "LifeSumPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2C72511CF4B86900A82D76 /* Debug */,
+				EB2C72521CF4B86900A82D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2C72531CF4B86900A82D76 /* Build configuration list for PBXNativeTarget "LifeSumPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2C72541CF4B86900A82D76 /* Debug */,
+				EB2C72551CF4B86900A82D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2C72561CF4B86900A82D76 /* Build configuration list for PBXNativeTarget "LifeSumPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2C72571CF4B86900A82D76 /* Debug */,
+				EB2C72581CF4B86900A82D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB2C722F1CF4B86900A82D76 /* LifeSumPlus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB2C72301CF4B86900A82D76 /* LifeSumPlus.xcdatamodel */,
+			);
+			currentVersion = EB2C72301CF4B86900A82D76 /* LifeSumPlus.xcdatamodel */;
+			path = LifeSumPlus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB2C72181CF4B86900A82D76 /* Project object */;
+}

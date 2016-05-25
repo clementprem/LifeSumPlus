@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FoodNutritionViewController" customModule="LifeSumPlus" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="RlS-1M-0lb" id="M74-fz-aZU"/>
+                <outlet property="titleLabel" destination="9dT-q9-OoY" id="XwU-y3-zXM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sF1-R0-ErU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcq-gQ-NVh">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="67"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is A Food Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dT-q9-OoY">
+                                    <rect key="frame" x="212" y="21" width="176" height="26"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZN-mk-P47">
+                                    <rect key="frame" x="8" y="21" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="3FH-OE-Ugc"/>
+                                        <constraint firstAttribute="width" constant="40" id="MfJ-Y7-DbM"/>
+                                    </constraints>
+                                    <state key="normal" image="close-128"/>
+                                    <connections>
+                                        <action selector="dismissView:" destination="-1" eventType="touchUpInside" id="HWD-ym-wSR"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.37254901959999998" green="0.69019607839999997" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="9dT-q9-OoY" firstAttribute="centerY" secondItem="qcq-gQ-NVh" secondAttribute="centerY" id="3d9-TO-v50"/>
+                                <constraint firstAttribute="height" constant="67" id="Foe-IE-ger"/>
+                                <constraint firstItem="qZN-mk-P47" firstAttribute="top" secondItem="qcq-gQ-NVh" secondAttribute="top" constant="21" id="PFa-LP-nwB"/>
+                                <constraint firstItem="qZN-mk-P47" firstAttribute="leading" secondItem="qcq-gQ-NVh" secondAttribute="leading" constant="8" id="n95-Q0-0dv"/>
+                                <constraint firstItem="9dT-q9-OoY" firstAttribute="centerX" secondItem="qcq-gQ-NVh" secondAttribute="centerX" id="sNp-1x-xwA"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RlS-1M-0lb">
+                            <rect key="frame" x="0.0" y="67" width="600" height="533"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="m49-1n-eSx"/>
+                                <outlet property="delegate" destination="-1" id="krK-nI-mCk"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qcq-gQ-NVh" firstAttribute="leading" secondItem="sF1-R0-ErU" secondAttribute="leading" id="5eY-IU-Bv6"/>
+                        <constraint firstItem="RlS-1M-0lb" firstAttribute="top" secondItem="qcq-gQ-NVh" secondAttribute="bottom" id="7nA-Fq-2kh"/>
+                        <constraint firstItem="qcq-gQ-NVh" firstAttribute="top" secondItem="sF1-R0-ErU" secondAttribute="top" id="DkM-aw-tw9"/>
+                        <constraint firstAttribute="bottom" secondItem="RlS-1M-0lb" secondAttribute="bottom" id="NGG-jQ-aMj"/>
+                        <constraint firstAttribute="trailing" secondItem="qcq-gQ-NVh" secondAttribute="trailing" id="Oce-bT-7Ax"/>
+                        <constraint firstItem="RlS-1M-0lb" firstAttribute="leading" secondItem="sF1-R0-ErU" secondAttribute="leading" id="lHn-zv-h7F"/>
+                        <constraint firstAttribute="trailing" secondItem="RlS-1M-0lb" secondAttribute="trailing" id="mad-gS-VX2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sF1-R0-ErU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1ht-tb-N7z"/>
+                <constraint firstAttribute="bottom" secondItem="sF1-R0-ErU" secondAttribute="bottom" id="FbL-Ke-qxd"/>
+                <constraint firstAttribute="trailing" secondItem="sF1-R0-ErU" secondAttribute="trailing" id="jlU-5K-wiT"/>
+                <constraint firstItem="sF1-R0-ErU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o6o-f1-dzL"/>
+            </constraints>
+            <point key="canvasLocation" x="507" y="381"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-128" width="42" height="42"/>
+    </resources>
+</document>
