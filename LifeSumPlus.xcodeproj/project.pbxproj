@@ -416,7 +416,7 @@
 				TargetAttributes = {
 					EB2C721F1CF4B86900A82D76 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = QEX8J3RZZD;
+						DevelopmentTeam = Y63WYNW2TJ;
 					};
 					EB2C723B1CF4B86900A82D76 = {
 						CreatedOnToolsVersion = 7.3;
@@ -774,7 +774,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LifeSumPlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leapset.Order-Pad.enterprise";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.lifesum-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LifeSumPlus/LifeSumPlus-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -790,7 +790,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LifeSumPlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leapset.Order-Pad.enterprise";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.lifesum-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LifeSumPlus/LifeSumPlus-Bridging-Header.h";
 			};
